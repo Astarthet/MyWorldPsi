@@ -55,8 +55,8 @@ nav ul li {
   margin: 0px 20px;
 }
 nav ul li a {
-  color: rgb(0, 0, 0);
-  font-size: 14px;
+  color: #43372b;
+  font-size: 15px;
 }
 nav ul li a:hover {
   background-color: #dabcb2;
@@ -74,7 +74,7 @@ nav ul li a:hover {
   width: 50px;
   height: 50px;
   font-size: 20px;
-  background-color: azure;
+  background-color: #dabcb2;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -110,12 +110,12 @@ nav ul li a:hover {
   max-width: 400px;
   font-size: 50px;
   font-weight: 900;
-  color: rgb(0, 0, 0);
+  color: #a17a69;
 }
 .cover h2 {
   font-size: 50px;
   font-weight: 900;
-  color: yellow;
+  color: #ceaa9a;
   margin-top: -10px;
 }
 .cover p {
@@ -129,14 +129,16 @@ nav ul li a:hover {
   font-weight: 600;
   border: none;
   color: white;
-  background-color: rgb(206, 206, 149);
+  background-color: #b5927f;
   border-radius: 20px;
-  box-shadow: 1px 1px 30px -5px #000000;
+  box-shadow: 1px 1px 30px 5px #b5a59f;
   cursor: pointer;
   transition: box-shadow 500ms;
 }
 .cover input[type="button"]:hover {
-  box-shadow: 1px 1px 30px -5px #272525;
+  color: white;
+  background-color: #b4846a;
+  box-shadow: 1px 1px 30px 5px #a17a69; 
   cursor: pointer;
 }
 .container-img {
@@ -144,10 +146,11 @@ nav ul li a:hover {
 }
 .container-img img {
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   left: 450px;
-  width: 800px;
+  width: 780px;
   height: 600px;
+  align-items: center;
   animation: moveVector 6s ease-in-out infinite;
 }
 .move-content {
@@ -156,19 +159,19 @@ nav ul li a:hover {
 
 @keyframes moveVector {
   0% {
-    transform: translateY(10px);
+    transform: translateY(120px);
   }
   25% {
-    transform: translateY(-10px);
+    transform: translateY(100px);
   }
   100% {
-    transform: translateY(10px);
+    transform: translateY(120px);
   }
 }
 
 @media screen and (max-width: 920px) {
   .container-img img {
-    width: 500px;
+    width: 370px;
   }
 }
 
@@ -182,8 +185,8 @@ nav ul li a:hover {
     display: flex;
   }
   nav {
-    height: 100%;
-    background-color: slategray;
+    height: 100vh;
+    background-color: #ebcdc3;
     position: fixed;
     top: 0;
     right: -180px;
