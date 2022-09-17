@@ -57,6 +57,7 @@ nav ul li {
 nav ul li a {
   color: #43372b;
   font-size: 15px;
+  transition: all 1200ms;
 }
 nav ul li a:hover {
   background-color: #dabcb2;
@@ -67,7 +68,7 @@ nav ul li a:hover {
 }
 .nav-move {
   height: 90px;
-  box-shadow: 1px 1px 10px 0px rgb(0, 0, 0);
+  box-shadow: 1px 1px 10px 0px #a76f57;
   background-color: white;
 }
 .btn-menu {
@@ -108,9 +109,14 @@ nav ul li a:hover {
 }
 .cover h1 {
   max-width: 400px;
-  font-size: 50px;
+  font-size: 55px;
   font-weight: 900;
   color: #a17a69;
+  transition: all 3000ms;
+}
+.cover h1:hover {
+  font-size: 60px;
+  transition: all 1200ms;
 }
 .cover h2 {
   font-size: 50px;
@@ -138,7 +144,7 @@ nav ul li a:hover {
 .cover input[type="button"]:hover {
   color: white;
   background-color: #b4846a;
-  box-shadow: 1px 1px 30px 5px #a17a69; 
+  box-shadow: 1px 1px 30px 5px #a17a69;
   cursor: pointer;
 }
 .container-img {
@@ -157,18 +163,42 @@ nav ul li a:hover {
   right: 180px;
 }
 
+/* About */
+.titulo-about {
+  color: #a17a69;
+  margin: 20px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  transition: all 3000ms;
+}
+.titulo-about:hover {
+  color: #a76f57;
+  font-size: 35px;
+  text-shadow: #ff9c67 1px 0 10px;
+  transition: all 3000ms;
+}
+.contenedor-about {
+  max-width: 1200px;
+  padding: 15em;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #43372b;
+}
+/* keyframes */
 @keyframes moveVector {
   0% {
-    transform: translateY(120px);
-  }
-  25% {
     transform: translateY(100px);
   }
+  25% {
+    transform: translateY(80px);
+  }
   100% {
-    transform: translateY(120px);
+    transform: translateY(100px);
   }
 }
-
+/* media */
 @media screen and (max-width: 920px) {
   .container-img img {
     width: 370px;
